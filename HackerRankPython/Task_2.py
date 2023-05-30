@@ -1,0 +1,22 @@
+"""
+Given an integer, n, perform the following conditional actions:
+
+If n is odd, print Weird
+If n is even and in the inclusive range of 2 to 5, print Not Weird
+If n is even and in the inclusive range of 6 to 20, print Weird
+If n is even and greater than 20, print Not Weird
+
+"""
+
+user_input = int(input("Enter an integer: ").strip())
+if user_input % 2 == 0:
+
+    if 2 <= user_input <= 5:
+        print("Not Weird")
+    elif 6 <= user_input <= 20:
+        print("Weird")
+    else:
+        print("Not Weird")
+
+else:
+    print("Weird")
